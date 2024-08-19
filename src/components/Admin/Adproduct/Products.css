@@ -1,0 +1,86 @@
+.products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.products-table th,
+.products-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.products-table th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.products-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.products-table tr:hover {
+  background-color: #e0f7fa;
+}
+
+.products-table button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.products-table button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.products-table button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .products-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .products-table th,
+  .products-table td {
+    white-space: nowrap;
+  }
+}
+.add-product-button {
+  margin-bottom: 20px; /* Khoảng cách phía dưới nút */
+  padding: 10px 15px; /* Đệm bên trong */
+  font-size: 16px; /* Kích thước chữ */
+  color: #fff; /* Màu chữ */
+  background-color: #28a745; /* Màu nền (xanh lá cây) */
+  border: none; /* Không viền */
+  border-radius: 4px; /* Bo các góc */
+  cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+.add-product-button:hover {
+  background-color: #218838; /* Màu nền khi di chuột qua nút */
+}
